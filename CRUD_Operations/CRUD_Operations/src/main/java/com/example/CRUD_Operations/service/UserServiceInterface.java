@@ -14,5 +14,5 @@ public interface UserServiceInterface {
     void updateUserEmails(List<User>users);
     List<User> getUsersByEmailDomain(String domain);
     int getUserCount();
-
+    void addUserWithExceptionHandling(User user);
 }

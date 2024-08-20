@@ -4,6 +4,8 @@ import com.example.CRUD_Operations.model.User;
 import com.example.CRUD_Operations.repository.UserRepository;
 import com.example.CRUD_Operations.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -75,6 +77,23 @@ public class UserController {
     public int countUsers()
     {
         return userService.getUserCount();
+    }
+
+    @PostMapping("/unique")
+    public ResponseEntity<String> insertUnique(@RequestBody User user)
+    {
+        ResponseEntity<String> response = null;
+        try {
+            userService.addUserWithExceptionHandling(user);
+            response= new ResponseEntity<String>(
+                    "User '"+user.getId()+"' created", HttpStatus.CREATED);
+        }catch (Exception e)
+        {
+            response = new ResponseEntity<String>(
+                    "User with same id already exists",
+                    HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+        return response;
     }
 
 }

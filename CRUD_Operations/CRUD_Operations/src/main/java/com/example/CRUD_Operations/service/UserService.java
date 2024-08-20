@@ -3,6 +3,7 @@ package com.example.CRUD_Operations.service;
 import com.example.CRUD_Operations.model.User;
 import com.example.CRUD_Operations.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.DuplicateKeyException;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -74,5 +75,14 @@ public class UserService implements UserServiceInterface{
     @Override
     public int getUserCount() {
         return userRepository.findCount();
+    }
+
+    @Override
+    public void addUserWithExceptionHandling(User user) {
+        Optional<User> user1 = userRepository.findById(user.getId());
+        if(user1.isPresent())
+            throw new DuplicateKeyException("Already exists");
+        else
+            userRepository.save(user);
     }
 }
