@@ -18,5 +18,11 @@ public interface UserRepository extends JpaRepository <User,Long>{
     @Query("UPDATE User u SET u.email = :email WHERE u.id = :id")
     void updateEmail(@Param("id") Long id, @Param("email") String email);
 
+    @Query("SELECT u FROM User u WHERE u.email LIKE %:domain%")
+    List<User> findUsersByEmailDomain(@Param("domain") String domain);
+
+    @Query("SELECT COUNT(u) FROM User u")
+    int findCount();
+
 
 }

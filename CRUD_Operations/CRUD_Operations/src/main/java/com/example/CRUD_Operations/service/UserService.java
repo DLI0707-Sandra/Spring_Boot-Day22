@@ -13,6 +13,7 @@ public class UserService implements UserServiceInterface{
     @Autowired
     private UserRepository userRepository;
 
+    //Find all users
     @Override
     public List<User> findAllUsers() {
         return userRepository.findAll();
@@ -63,5 +64,15 @@ public class UserService implements UserServiceInterface{
             {
                 userRepository.updateEmail(user.getId(),user.getEmail());
             }
+    }
+
+    @Override
+    public List<User> getUsersByEmailDomain(String domain) {
+        return userRepository.findUsersByEmailDomain(domain);
+    }
+
+    @Override
+    public int getUserCount() {
+        return userRepository.findCount();
     }
 }

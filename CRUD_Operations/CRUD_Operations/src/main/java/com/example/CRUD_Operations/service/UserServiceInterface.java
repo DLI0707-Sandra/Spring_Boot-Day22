@@ -12,4 +12,7 @@ public interface UserServiceInterface {
     String deleteUser(long id);
     List<User> addUsers(List<User>users);
     void updateUserEmails(List<User>users);
+    List<User> getUsersByEmailDomain(String domain);
+    int getUserCount();
+
 }

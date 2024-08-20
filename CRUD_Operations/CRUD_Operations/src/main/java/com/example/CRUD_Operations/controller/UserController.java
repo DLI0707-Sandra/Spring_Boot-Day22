@@ -58,5 +58,23 @@ public class UserController {
         userService.updateUserEmails(users);
     }
 
+    @GetMapping("/domain")
+    public List<User> getUsers(@RequestBody String domain)
+    {
+        return userService.getUsersByEmailDomain(domain);
+    }
+
+//    OR
+//    @GetMapping("/{domain}")
+//    public List<User> getUsers(@PathVariable String domain)
+//    {
+//        return userService.getUsersByEmailDomain(domain);
+//    }
+
+    @GetMapping("/count")
+    public int countUsers()
+    {
+        return userService.getUserCount();
+    }
 
 }
