@@ -1,0 +1,596 @@
+2024-08-20T14:39:37.945+05:30  INFO 31044 --- [CRUD_Operations] [restartedMain] c.e.C.CrudOperationsApplication          : Starting CrudOperationsApplication using Java 17.0.12 with PID 31044 (C:\Users\sandra.davis\IdeaProjects\CRUD_Operations\CRUD_Operations\target\classes started by Sandra.Davis in C:\Users\sandra.davis\IdeaProjects\CRUD_Operations)
+2024-08-20T14:39:37.948+05:30  INFO 31044 --- [CRUD_Operations] [restartedMain] c.e.C.CrudOperationsApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-08-20T14:39:38.034+05:30  INFO 31044 --- [CRUD_Operations] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-08-20T14:39:38.035+05:30  INFO 31044 --- [CRUD_Operations] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-08-20T14:39:38.817+05:30  INFO 31044 --- [CRUD_Operations] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-20T14:39:38.884+05:30  INFO 31044 --- [CRUD_Operations] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 61 ms. Found 1 JPA repository interface.
+2024-08-20T14:39:39.548+05:30  INFO 31044 --- [CRUD_Operations] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-20T14:39:39.557+05:30  INFO 31044 --- [CRUD_Operations] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-20T14:39:39.557+05:30  INFO 31044 --- [CRUD_Operations] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-20T14:39:39.617+05:30  INFO 31044 --- [CRUD_Operations] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-20T14:39:39.618+05:30  INFO 31044 --- [CRUD_Operations] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1579 ms
+2024-08-20T14:39:39.849+05:30  INFO 31044 --- [CRUD_Operations] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-20T14:39:39.905+05:30  INFO 31044 --- [CRUD_Operations] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-20T14:39:39.930+05:30  INFO 31044 --- [CRUD_Operations] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-20T14:39:40.178+05:30  INFO 31044 --- [CRUD_Operations] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-20T14:39:40.214+05:30  INFO 31044 --- [CRUD_Operations] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-20T14:39:40.446+05:30  INFO 31044 --- [CRUD_Operations] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@51573ec9
+2024-08-20T14:39:40.447+05:30  INFO 31044 --- [CRUD_Operations] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-20T14:39:40.468+05:30  WARN 31044 --- [CRUD_Operations] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-20T14:39:41.305+05:30  INFO 31044 --- [CRUD_Operations] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-20T14:39:41.356+05:30  INFO 31044 --- [CRUD_Operations] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-20T14:39:41.366+05:30  WARN 31044 --- [CRUD_Operations] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController': Unsatisfied dependency expressed through field 'userService': No qualifying bean of type 'com.example.CRUD_Operations.service.UserService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2024-08-20T14:39:41.366+05:30  INFO 31044 --- [CRUD_Operations] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-20T14:39:41.370+05:30  INFO 31044 --- [CRUD_Operations] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-20T14:39:41.390+05:30  INFO 31044 --- [CRUD_Operations] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-20T14:39:41.392+05:30  INFO 31044 --- [CRUD_Operations] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-08-20T14:39:41.400+05:30  INFO 31044 --- [CRUD_Operations] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-08-20T14:39:41.437+05:30 ERROR 31044 --- [CRUD_Operations] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field userService in com.example.CRUD_Operations.controller.UserController required a bean of type 'com.example.CRUD_Operations.service.UserService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.example.CRUD_Operations.service.UserService' in your configuration.
+
+2024-08-20T14:40:27.468+05:30  INFO 32456 --- [CRUD_Operations] [restartedMain] c.e.C.CrudOperationsApplication          : Starting CrudOperationsApplication using Java 17.0.12 with PID 32456 (C:\Users\sandra.davis\IdeaProjects\CRUD_Operations\CRUD_Operations\target\classes started by Sandra.Davis in C:\Users\sandra.davis\IdeaProjects\CRUD_Operations)
+2024-08-20T14:40:27.472+05:30  INFO 32456 --- [CRUD_Operations] [restartedMain] c.e.C.CrudOperationsApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-08-20T14:40:27.586+05:30  INFO 32456 --- [CRUD_Operations] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-08-20T14:40:27.587+05:30  INFO 32456 --- [CRUD_Operations] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-08-20T14:40:28.332+05:30  INFO 32456 --- [CRUD_Operations] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-20T14:40:28.421+05:30  INFO 32456 --- [CRUD_Operations] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 74 ms. Found 1 JPA repository interface.
+2024-08-20T14:40:29.302+05:30  INFO 32456 --- [CRUD_Operations] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-20T14:40:29.316+05:30  INFO 32456 --- [CRUD_Operations] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-20T14:40:29.317+05:30  INFO 32456 --- [CRUD_Operations] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-20T14:40:29.380+05:30  INFO 32456 --- [CRUD_Operations] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-20T14:40:29.381+05:30  INFO 32456 --- [CRUD_Operations] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1793 ms
+2024-08-20T14:40:29.652+05:30  INFO 32456 --- [CRUD_Operations] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-20T14:40:29.769+05:30  INFO 32456 --- [CRUD_Operations] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-20T14:40:29.861+05:30  INFO 32456 --- [CRUD_Operations] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-20T14:40:30.152+05:30  INFO 32456 --- [CRUD_Operations] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-20T14:40:30.186+05:30  INFO 32456 --- [CRUD_Operations] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-20T14:40:30.403+05:30  INFO 32456 --- [CRUD_Operations] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@46bb9658
+2024-08-20T14:40:30.404+05:30  INFO 32456 --- [CRUD_Operations] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-20T14:40:30.431+05:30  WARN 32456 --- [CRUD_Operations] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-20T14:40:31.351+05:30  INFO 32456 --- [CRUD_Operations] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-20T14:40:31.385+05:30  INFO 32456 --- [CRUD_Operations] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-20T14:40:31.725+05:30  WARN 32456 --- [CRUD_Operations] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-20T14:40:31.876+05:30 DEBUG 32456 --- [CRUD_Operations] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2024-08-20T14:40:32.010+05:30 DEBUG 32456 --- [CRUD_Operations] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-08-20T14:40:32.058+05:30 DEBUG 32456 --- [CRUD_Operations] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-08-20T14:40:32.101+05:30 DEBUG 32456 --- [CRUD_Operations] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-08-20T14:40:32.228+05:30  INFO 32456 --- [CRUD_Operations] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-08-20T14:40:32.289+05:30  INFO 32456 --- [CRUD_Operations] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-20T14:40:32.303+05:30  INFO 32456 --- [CRUD_Operations] [restartedMain] c.e.C.CrudOperationsApplication          : Started CrudOperationsApplication in 5.237 seconds (process running for 5.727)
+2024-08-20T14:42:45.023+05:30  INFO 32456 --- [CRUD_Operations] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-20T14:42:45.024+05:30  INFO 32456 --- [CRUD_Operations] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-20T14:42:45.024+05:30 DEBUG 32456 --- [CRUD_Operations] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-08-20T14:42:45.024+05:30 DEBUG 32456 --- [CRUD_Operations] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-08-20T14:42:45.024+05:30 DEBUG 32456 --- [CRUD_Operations] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-08-20T14:42:45.025+05:30 DEBUG 32456 --- [CRUD_Operations] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@6f95ec6
+2024-08-20T14:42:45.025+05:30 DEBUG 32456 --- [CRUD_Operations] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@81095a9
+2024-08-20T14:42:45.025+05:30 DEBUG 32456 --- [CRUD_Operations] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-08-20T14:42:45.025+05:30  INFO 32456 --- [CRUD_Operations] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-08-20T14:42:45.031+05:30 DEBUG 32456 --- [CRUD_Operations] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/users", parameters={}
+2024-08-20T14:42:45.039+05:30 DEBUG 32456 --- [CRUD_Operations] [http-nio-8080-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-08-20T14:42:45.053+05:30 DEBUG 32456 --- [CRUD_Operations] [http-nio-8080-exec-2] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2024-08-20T14:42:45.058+05:30 DEBUG 32456 --- [CRUD_Operations] [http-nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource users.]
+2024-08-20T14:42:45.059+05:30 DEBUG 32456 --- [CRUD_Operations] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2024-08-20T14:42:45.064+05:30 DEBUG 32456 --- [CRUD_Operations] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for POST "/error", parameters={}
+2024-08-20T14:42:45.066+05:30 DEBUG 32456 --- [CRUD_Operations] [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-08-20T14:42:45.111+05:30 DEBUG 32456 --- [CRUD_Operations] [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-08-20T14:42:45.112+05:30 DEBUG 32456 --- [CRUD_Operations] [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Tue Aug 20 14:42:45 IST 2024, status=404, error=Not Found, trace=org.springframework.web. (truncated)...]
+2024-08-20T14:42:45.154+05:30 DEBUG 32456 --- [CRUD_Operations] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2024-08-20T14:42:55.773+05:30  INFO 32456 --- [CRUD_Operations] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-20T14:42:55.776+05:30  INFO 32456 --- [CRUD_Operations] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-20T14:42:55.780+05:30  INFO 32456 --- [CRUD_Operations] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-20T14:43:03.717+05:30  INFO 11336 --- [CRUD_Operations] [restartedMain] c.e.C.CrudOperationsApplication          : Starting CrudOperationsApplication using Java 17.0.12 with PID 11336 (C:\Users\sandra.davis\IdeaProjects\CRUD_Operations\CRUD_Operations\target\classes started by Sandra.Davis in C:\Users\sandra.davis\IdeaProjects\CRUD_Operations)
+2024-08-20T14:43:03.721+05:30  INFO 11336 --- [CRUD_Operations] [restartedMain] c.e.C.CrudOperationsApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-08-20T14:43:03.841+05:30  INFO 11336 --- [CRUD_Operations] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-08-20T14:43:03.841+05:30  INFO 11336 --- [CRUD_Operations] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-08-20T14:43:04.721+05:30  INFO 11336 --- [CRUD_Operations] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-20T14:43:04.796+05:30  INFO 11336 --- [CRUD_Operations] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 66 ms. Found 1 JPA repository interface.
+2024-08-20T14:43:05.682+05:30  INFO 11336 --- [CRUD_Operations] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-20T14:43:05.707+05:30  INFO 11336 --- [CRUD_Operations] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-20T14:43:05.708+05:30  INFO 11336 --- [CRUD_Operations] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-20T14:43:05.774+05:30  INFO 11336 --- [CRUD_Operations] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-20T14:43:05.774+05:30  INFO 11336 --- [CRUD_Operations] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1932 ms
+2024-08-20T14:43:06.019+05:30  INFO 11336 --- [CRUD_Operations] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-20T14:43:06.096+05:30  INFO 11336 --- [CRUD_Operations] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-20T14:43:06.123+05:30  INFO 11336 --- [CRUD_Operations] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-20T14:43:06.362+05:30  INFO 11336 --- [CRUD_Operations] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-20T14:43:06.399+05:30  INFO 11336 --- [CRUD_Operations] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-20T14:43:06.625+05:30  INFO 11336 --- [CRUD_Operations] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4427beee
+2024-08-20T14:43:06.628+05:30  INFO 11336 --- [CRUD_Operations] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-20T14:43:06.662+05:30  WARN 11336 --- [CRUD_Operations] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-20T14:43:07.583+05:30  INFO 11336 --- [CRUD_Operations] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-20T14:43:07.631+05:30  INFO 11336 --- [CRUD_Operations] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-20T14:43:08.016+05:30  WARN 11336 --- [CRUD_Operations] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-20T14:43:08.134+05:30 DEBUG 11336 --- [CRUD_Operations] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2024-08-20T14:43:08.261+05:30 DEBUG 11336 --- [CRUD_Operations] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-08-20T14:43:08.311+05:30 DEBUG 11336 --- [CRUD_Operations] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-08-20T14:43:08.356+05:30 DEBUG 11336 --- [CRUD_Operations] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-08-20T14:43:08.497+05:30  INFO 11336 --- [CRUD_Operations] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-08-20T14:43:08.566+05:30  INFO 11336 --- [CRUD_Operations] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-20T14:43:08.580+05:30  INFO 11336 --- [CRUD_Operations] [restartedMain] c.e.C.CrudOperationsApplication          : Started CrudOperationsApplication in 5.293 seconds (process running for 5.843)
+2024-08-20T14:43:13.613+05:30  INFO 11336 --- [CRUD_Operations] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-20T14:43:13.613+05:30  INFO 11336 --- [CRUD_Operations] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-20T14:43:13.613+05:30 DEBUG 11336 --- [CRUD_Operations] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-08-20T14:43:13.613+05:30 DEBUG 11336 --- [CRUD_Operations] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-08-20T14:43:13.613+05:30 DEBUG 11336 --- [CRUD_Operations] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-08-20T14:43:13.613+05:30 DEBUG 11336 --- [CRUD_Operations] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@75640bba
+2024-08-20T14:43:13.613+05:30 DEBUG 11336 --- [CRUD_Operations] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@35414f80
+2024-08-20T14:43:13.613+05:30 DEBUG 11336 --- [CRUD_Operations] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-08-20T14:43:13.613+05:30  INFO 11336 --- [CRUD_Operations] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-08-20T14:43:13.644+05:30 DEBUG 11336 --- [CRUD_Operations] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/users", parameters={}
+2024-08-20T14:43:13.660+05:30 DEBUG 11336 --- [CRUD_Operations] [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.CRUD_Operations.controller.UserController#createEmployee(User)
+2024-08-20T14:43:13.895+05:30 DEBUG 11336 --- [CRUD_Operations] [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [User(id=null, name=Gayathri, email=gayathri@gmail.com)]
+2024-08-20T14:43:14.177+05:30 DEBUG 11336 --- [CRUD_Operations] [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-08-20T14:43:14.177+05:30 DEBUG 11336 --- [CRUD_Operations] [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [User(id=3, name=Gayathri, email=gayathri@gmail.com)]
+2024-08-20T14:43:14.209+05:30 DEBUG 11336 --- [CRUD_Operations] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-08-20T14:54:54.912+05:30  INFO 11336 --- [CRUD_Operations] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-20T14:54:54.915+05:30  INFO 11336 --- [CRUD_Operations] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-20T14:54:54.920+05:30  INFO 11336 --- [CRUD_Operations] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-20T14:55:07.209+05:30  INFO 28256 --- [CRUD_Operations] [restartedMain] c.e.C.CrudOperationsApplication          : Starting CrudOperationsApplication using Java 17.0.12 with PID 28256 (C:\Users\sandra.davis\IdeaProjects\CRUD_Operations\CRUD_Operations\target\classes started by Sandra.Davis in C:\Users\sandra.davis\IdeaProjects\CRUD_Operations)
+2024-08-20T14:55:07.211+05:30  INFO 28256 --- [CRUD_Operations] [restartedMain] c.e.C.CrudOperationsApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-08-20T14:55:07.288+05:30  INFO 28256 --- [CRUD_Operations] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-08-20T14:55:07.289+05:30  INFO 28256 --- [CRUD_Operations] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-08-20T14:55:08.073+05:30  INFO 28256 --- [CRUD_Operations] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-20T14:55:08.149+05:30  INFO 28256 --- [CRUD_Operations] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 68 ms. Found 1 JPA repository interface.
+2024-08-20T14:55:08.961+05:30  INFO 28256 --- [CRUD_Operations] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-20T14:55:08.972+05:30  INFO 28256 --- [CRUD_Operations] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-20T14:55:08.972+05:30  INFO 28256 --- [CRUD_Operations] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-20T14:55:09.025+05:30  INFO 28256 --- [CRUD_Operations] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-20T14:55:09.025+05:30  INFO 28256 --- [CRUD_Operations] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1735 ms
+2024-08-20T14:55:09.188+05:30  INFO 28256 --- [CRUD_Operations] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-20T14:55:09.262+05:30  INFO 28256 --- [CRUD_Operations] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-20T14:55:09.310+05:30  INFO 28256 --- [CRUD_Operations] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-20T14:55:09.578+05:30  INFO 28256 --- [CRUD_Operations] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-20T14:55:09.608+05:30  INFO 28256 --- [CRUD_Operations] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-20T14:55:09.843+05:30  INFO 28256 --- [CRUD_Operations] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@181722de
+2024-08-20T14:55:09.845+05:30  INFO 28256 --- [CRUD_Operations] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-20T14:55:09.873+05:30  WARN 28256 --- [CRUD_Operations] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-20T14:55:10.795+05:30  INFO 28256 --- [CRUD_Operations] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-20T14:55:10.838+05:30  INFO 28256 --- [CRUD_Operations] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-20T14:55:10.867+05:30  WARN 28256 --- [CRUD_Operations] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController': Unsatisfied dependency expressed through field 'userService': No qualifying bean of type 'com.example.CRUD_Operations.service.UserService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2024-08-20T14:55:10.868+05:30  INFO 28256 --- [CRUD_Operations] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-20T14:55:10.875+05:30  INFO 28256 --- [CRUD_Operations] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-20T14:55:10.937+05:30  INFO 28256 --- [CRUD_Operations] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-20T14:55:10.940+05:30  INFO 28256 --- [CRUD_Operations] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-08-20T14:55:10.955+05:30  INFO 28256 --- [CRUD_Operations] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-08-20T14:55:10.987+05:30 ERROR 28256 --- [CRUD_Operations] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field userService in com.example.CRUD_Operations.controller.UserController required a bean of type 'com.example.CRUD_Operations.service.UserService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.example.CRUD_Operations.service.UserService' in your configuration.
+
+2024-08-20T14:58:05.689+05:30  INFO 5588 --- [CRUD_Operations] [restartedMain] c.e.C.CrudOperationsApplication          : Starting CrudOperationsApplication using Java 17.0.12 with PID 5588 (C:\Users\sandra.davis\IdeaProjects\CRUD_Operations\CRUD_Operations\target\classes started by Sandra.Davis in C:\Users\sandra.davis\IdeaProjects\CRUD_Operations)
+2024-08-20T14:58:05.694+05:30  INFO 5588 --- [CRUD_Operations] [restartedMain] c.e.C.CrudOperationsApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-08-20T14:58:05.790+05:30  INFO 5588 --- [CRUD_Operations] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-08-20T14:58:05.790+05:30  INFO 5588 --- [CRUD_Operations] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-08-20T14:58:06.563+05:30  INFO 5588 --- [CRUD_Operations] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-20T14:58:06.657+05:30  INFO 5588 --- [CRUD_Operations] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 85 ms. Found 1 JPA repository interface.
+2024-08-20T14:58:07.401+05:30  INFO 5588 --- [CRUD_Operations] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-20T14:58:07.414+05:30  INFO 5588 --- [CRUD_Operations] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-20T14:58:07.415+05:30  INFO 5588 --- [CRUD_Operations] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-20T14:58:07.463+05:30  INFO 5588 --- [CRUD_Operations] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-20T14:58:07.463+05:30  INFO 5588 --- [CRUD_Operations] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1672 ms
+2024-08-20T14:58:07.658+05:30  INFO 5588 --- [CRUD_Operations] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-20T14:58:07.726+05:30  INFO 5588 --- [CRUD_Operations] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-20T14:58:07.755+05:30  INFO 5588 --- [CRUD_Operations] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-20T14:58:07.995+05:30  INFO 5588 --- [CRUD_Operations] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-20T14:58:08.029+05:30  INFO 5588 --- [CRUD_Operations] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-20T14:58:08.238+05:30  INFO 5588 --- [CRUD_Operations] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3c23b41b
+2024-08-20T14:58:08.240+05:30  INFO 5588 --- [CRUD_Operations] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-20T14:58:08.264+05:30  WARN 5588 --- [CRUD_Operations] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-20T14:58:09.041+05:30  INFO 5588 --- [CRUD_Operations] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-20T14:58:09.086+05:30  INFO 5588 --- [CRUD_Operations] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-20T14:58:09.096+05:30  WARN 5588 --- [CRUD_Operations] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController': Unsatisfied dependency expressed through field 'userService': No qualifying bean of type 'com.example.CRUD_Operations.service.UserService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2024-08-20T14:58:09.097+05:30  INFO 5588 --- [CRUD_Operations] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-20T14:58:09.100+05:30  INFO 5588 --- [CRUD_Operations] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-20T14:58:09.127+05:30  INFO 5588 --- [CRUD_Operations] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-20T14:58:09.128+05:30  INFO 5588 --- [CRUD_Operations] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-08-20T14:58:09.136+05:30  INFO 5588 --- [CRUD_Operations] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-08-20T14:58:09.159+05:30 ERROR 5588 --- [CRUD_Operations] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field userService in com.example.CRUD_Operations.controller.UserController required a bean of type 'com.example.CRUD_Operations.service.UserService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.example.CRUD_Operations.service.UserService' in your configuration.
+
+2024-08-20T14:58:55.817+05:30  INFO 29968 --- [CRUD_Operations] [restartedMain] c.e.C.CrudOperationsApplication          : Starting CrudOperationsApplication using Java 17.0.12 with PID 29968 (C:\Users\sandra.davis\IdeaProjects\CRUD_Operations\CRUD_Operations\target\classes started by Sandra.Davis in C:\Users\sandra.davis\IdeaProjects\CRUD_Operations)
+2024-08-20T14:58:55.820+05:30  INFO 29968 --- [CRUD_Operations] [restartedMain] c.e.C.CrudOperationsApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-08-20T14:58:55.893+05:30  INFO 29968 --- [CRUD_Operations] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-08-20T14:58:55.894+05:30  INFO 29968 --- [CRUD_Operations] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-08-20T14:58:56.620+05:30  INFO 29968 --- [CRUD_Operations] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-20T14:58:56.704+05:30  INFO 29968 --- [CRUD_Operations] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 73 ms. Found 1 JPA repository interface.
+2024-08-20T14:58:57.421+05:30  INFO 29968 --- [CRUD_Operations] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-20T14:58:57.435+05:30  INFO 29968 --- [CRUD_Operations] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-20T14:58:57.436+05:30  INFO 29968 --- [CRUD_Operations] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-20T14:58:57.490+05:30  INFO 29968 --- [CRUD_Operations] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-20T14:58:57.490+05:30  INFO 29968 --- [CRUD_Operations] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1596 ms
+2024-08-20T14:58:57.705+05:30  INFO 29968 --- [CRUD_Operations] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-20T14:58:57.763+05:30  INFO 29968 --- [CRUD_Operations] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-20T14:58:57.791+05:30  INFO 29968 --- [CRUD_Operations] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-20T14:58:58.062+05:30  INFO 29968 --- [CRUD_Operations] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-20T14:58:58.092+05:30  INFO 29968 --- [CRUD_Operations] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-20T14:58:58.266+05:30  INFO 29968 --- [CRUD_Operations] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@39991188
+2024-08-20T14:58:58.266+05:30  INFO 29968 --- [CRUD_Operations] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-20T14:58:58.294+05:30  WARN 29968 --- [CRUD_Operations] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-20T14:58:59.191+05:30  INFO 29968 --- [CRUD_Operations] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-20T14:58:59.239+05:30  INFO 29968 --- [CRUD_Operations] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-20T14:58:59.250+05:30  WARN 29968 --- [CRUD_Operations] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController': Unsatisfied dependency expressed through field 'userService': No qualifying bean of type 'com.example.CRUD_Operations.service.UserService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2024-08-20T14:58:59.251+05:30  INFO 29968 --- [CRUD_Operations] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-20T14:58:59.256+05:30  INFO 29968 --- [CRUD_Operations] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-20T14:58:59.288+05:30  INFO 29968 --- [CRUD_Operations] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-20T14:58:59.289+05:30  INFO 29968 --- [CRUD_Operations] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-08-20T14:58:59.297+05:30  INFO 29968 --- [CRUD_Operations] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-08-20T14:58:59.321+05:30 ERROR 29968 --- [CRUD_Operations] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field userService in com.example.CRUD_Operations.controller.UserController required a bean of type 'com.example.CRUD_Operations.service.UserService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.example.CRUD_Operations.service.UserService' in your configuration.
+
+2024-08-20T15:00:09.778+05:30  INFO 13860 --- [CRUD_Operations] [restartedMain] c.e.C.CrudOperationsApplication          : Starting CrudOperationsApplication using Java 17.0.12 with PID 13860 (C:\Users\sandra.davis\IdeaProjects\CRUD_Operations\CRUD_Operations\target\classes started by Sandra.Davis in C:\Users\sandra.davis\IdeaProjects\CRUD_Operations)
+2024-08-20T15:00:09.782+05:30  INFO 13860 --- [CRUD_Operations] [restartedMain] c.e.C.CrudOperationsApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-08-20T15:00:09.904+05:30  INFO 13860 --- [CRUD_Operations] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-08-20T15:00:09.905+05:30  INFO 13860 --- [CRUD_Operations] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-08-20T15:00:10.752+05:30  INFO 13860 --- [CRUD_Operations] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-20T15:00:10.841+05:30  INFO 13860 --- [CRUD_Operations] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 75 ms. Found 1 JPA repository interface.
+2024-08-20T15:00:11.757+05:30  INFO 13860 --- [CRUD_Operations] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-20T15:00:11.777+05:30  INFO 13860 --- [CRUD_Operations] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-20T15:00:11.777+05:30  INFO 13860 --- [CRUD_Operations] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-20T15:00:11.841+05:30  INFO 13860 --- [CRUD_Operations] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-20T15:00:11.841+05:30  INFO 13860 --- [CRUD_Operations] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1935 ms
+2024-08-20T15:00:12.049+05:30  INFO 13860 --- [CRUD_Operations] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-20T15:00:12.100+05:30  INFO 13860 --- [CRUD_Operations] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-20T15:00:12.128+05:30  INFO 13860 --- [CRUD_Operations] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-20T15:00:12.380+05:30  INFO 13860 --- [CRUD_Operations] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-20T15:00:12.412+05:30  INFO 13860 --- [CRUD_Operations] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-20T15:00:12.644+05:30  INFO 13860 --- [CRUD_Operations] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@194b2074
+2024-08-20T15:00:12.645+05:30  INFO 13860 --- [CRUD_Operations] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-20T15:00:12.666+05:30  WARN 13860 --- [CRUD_Operations] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-20T15:00:13.561+05:30  INFO 13860 --- [CRUD_Operations] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-20T15:00:13.606+05:30  INFO 13860 --- [CRUD_Operations] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-20T15:00:13.624+05:30  WARN 13860 --- [CRUD_Operations] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController': Unsatisfied dependency expressed through field 'userService': No qualifying bean of type 'com.example.CRUD_Operations.service.UserService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2024-08-20T15:00:13.625+05:30  INFO 13860 --- [CRUD_Operations] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-20T15:00:13.629+05:30  INFO 13860 --- [CRUD_Operations] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-20T15:00:13.660+05:30  INFO 13860 --- [CRUD_Operations] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-20T15:00:13.661+05:30  INFO 13860 --- [CRUD_Operations] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-08-20T15:00:13.671+05:30  INFO 13860 --- [CRUD_Operations] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-08-20T15:00:13.709+05:30 ERROR 13860 --- [CRUD_Operations] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field userService in com.example.CRUD_Operations.controller.UserController required a bean of type 'com.example.CRUD_Operations.service.UserService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.example.CRUD_Operations.service.UserService' in your configuration.
+
+2024-08-20T15:04:12.806+05:30  INFO 24672 --- [CRUD_Operations] [restartedMain] c.e.C.CrudOperationsApplication          : Starting CrudOperationsApplication using Java 17.0.12 with PID 24672 (C:\Users\sandra.davis\IdeaProjects\CRUD_Operations\CRUD_Operations\target\classes started by Sandra.Davis in C:\Users\sandra.davis\IdeaProjects\CRUD_Operations)
+2024-08-20T15:04:12.810+05:30  INFO 24672 --- [CRUD_Operations] [restartedMain] c.e.C.CrudOperationsApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-08-20T15:04:12.929+05:30  INFO 24672 --- [CRUD_Operations] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-08-20T15:04:12.929+05:30  INFO 24672 --- [CRUD_Operations] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-08-20T15:04:13.612+05:30  INFO 24672 --- [CRUD_Operations] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-20T15:04:13.678+05:30  INFO 24672 --- [CRUD_Operations] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55 ms. Found 1 JPA repository interface.
+2024-08-20T15:04:14.357+05:30  INFO 24672 --- [CRUD_Operations] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-20T15:04:14.373+05:30  INFO 24672 --- [CRUD_Operations] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-20T15:04:14.374+05:30  INFO 24672 --- [CRUD_Operations] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-20T15:04:14.438+05:30  INFO 24672 --- [CRUD_Operations] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-20T15:04:14.438+05:30  INFO 24672 --- [CRUD_Operations] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1508 ms
+2024-08-20T15:04:14.708+05:30  INFO 24672 --- [CRUD_Operations] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-20T15:04:14.772+05:30  INFO 24672 --- [CRUD_Operations] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-20T15:04:14.795+05:30  INFO 24672 --- [CRUD_Operations] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-20T15:04:15.031+05:30  INFO 24672 --- [CRUD_Operations] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-20T15:04:15.063+05:30  INFO 24672 --- [CRUD_Operations] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-20T15:04:15.271+05:30  INFO 24672 --- [CRUD_Operations] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6684a997
+2024-08-20T15:04:15.273+05:30  INFO 24672 --- [CRUD_Operations] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-20T15:04:15.302+05:30  WARN 24672 --- [CRUD_Operations] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-20T15:04:16.134+05:30  INFO 24672 --- [CRUD_Operations] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-20T15:04:16.170+05:30  INFO 24672 --- [CRUD_Operations] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-20T15:04:16.545+05:30  WARN 24672 --- [CRUD_Operations] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-20T15:04:16.656+05:30 DEBUG 24672 --- [CRUD_Operations] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
+2024-08-20T15:04:16.786+05:30 DEBUG 24672 --- [CRUD_Operations] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-08-20T15:04:16.830+05:30 DEBUG 24672 --- [CRUD_Operations] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-08-20T15:04:16.872+05:30 DEBUG 24672 --- [CRUD_Operations] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-08-20T15:04:17.007+05:30  INFO 24672 --- [CRUD_Operations] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-08-20T15:04:17.057+05:30  INFO 24672 --- [CRUD_Operations] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-20T15:04:17.069+05:30  INFO 24672 --- [CRUD_Operations] [restartedMain] c.e.C.CrudOperationsApplication          : Started CrudOperationsApplication in 4.739 seconds (process running for 5.195)
+2024-08-20T15:06:52.652+05:30  INFO 24672 --- [CRUD_Operations] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-20T15:06:52.653+05:30  INFO 24672 --- [CRUD_Operations] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-20T15:06:52.654+05:30 DEBUG 24672 --- [CRUD_Operations] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-08-20T15:06:52.654+05:30 DEBUG 24672 --- [CRUD_Operations] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-08-20T15:06:52.655+05:30 DEBUG 24672 --- [CRUD_Operations] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-08-20T15:06:52.658+05:30 DEBUG 24672 --- [CRUD_Operations] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@3aef6a87
+2024-08-20T15:06:52.659+05:30 DEBUG 24672 --- [CRUD_Operations] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@58840bd8
+2024-08-20T15:06:52.660+05:30 DEBUG 24672 --- [CRUD_Operations] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-08-20T15:06:52.661+05:30  INFO 24672 --- [CRUD_Operations] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2024-08-20T15:06:52.679+05:30 DEBUG 24672 --- [CRUD_Operations] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/all", parameters={}
+2024-08-20T15:06:52.713+05:30 DEBUG 24672 --- [CRUD_Operations] [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.CRUD_Operations.controller.UserController#getAllUsers()
+2024-08-20T15:06:53.135+05:30 DEBUG 24672 --- [CRUD_Operations] [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-08-20T15:06:53.139+05:30 DEBUG 24672 --- [CRUD_Operations] [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [[User(id=1, name=Sandra, email=Sandra@gmail.com), User(id=2, name=Unnimaya, email=Unni@gmail.com), U (truncated)...]
+2024-08-20T15:06:53.217+05:30 DEBUG 24672 --- [CRUD_Operations] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-08-20T15:20:10.961+05:30  INFO 24672 --- [CRUD_Operations] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-20T15:20:10.964+05:30  INFO 24672 --- [CRUD_Operations] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-20T15:20:10.968+05:30  INFO 24672 --- [CRUD_Operations] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-20T15:20:15.752+05:30  INFO 31836 --- [CRUD_Operations] [restartedMain] c.e.C.CrudOperationsApplication          : Starting CrudOperationsApplication using Java 17.0.12 with PID 31836 (C:\Users\sandra.davis\IdeaProjects\CRUD_Operations\CRUD_Operations\target\classes started by Sandra.Davis in C:\Users\sandra.davis\IdeaProjects\CRUD_Operations)
+2024-08-20T15:20:15.759+05:30  INFO 31836 --- [CRUD_Operations] [restartedMain] c.e.C.CrudOperationsApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-08-20T15:20:15.837+05:30  INFO 31836 --- [CRUD_Operations] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-08-20T15:20:15.837+05:30  INFO 31836 --- [CRUD_Operations] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-08-20T15:20:16.574+05:30  INFO 31836 --- [CRUD_Operations] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-20T15:20:16.651+05:30  INFO 31836 --- [CRUD_Operations] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 68 ms. Found 1 JPA repository interface.
+2024-08-20T15:20:17.529+05:30  INFO 31836 --- [CRUD_Operations] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-20T15:20:17.539+05:30  INFO 31836 --- [CRUD_Operations] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-20T15:20:17.539+05:30  INFO 31836 --- [CRUD_Operations] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-20T15:20:17.594+05:30  INFO 31836 --- [CRUD_Operations] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-20T15:20:17.594+05:30  INFO 31836 --- [CRUD_Operations] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1756 ms
+2024-08-20T15:20:17.811+05:30  INFO 31836 --- [CRUD_Operations] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-20T15:20:17.867+05:30  INFO 31836 --- [CRUD_Operations] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-20T15:20:17.901+05:30  INFO 31836 --- [CRUD_Operations] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-20T15:20:18.203+05:30  INFO 31836 --- [CRUD_Operations] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-20T15:20:18.276+05:30  INFO 31836 --- [CRUD_Operations] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-20T15:20:18.505+05:30  INFO 31836 --- [CRUD_Operations] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@574bc964
+2024-08-20T15:20:18.508+05:30  INFO 31836 --- [CRUD_Operations] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-20T15:20:18.535+05:30  WARN 31836 --- [CRUD_Operations] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-20T15:20:19.458+05:30  INFO 31836 --- [CRUD_Operations] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-20T15:20:19.536+05:30  INFO 31836 --- [CRUD_Operations] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-20T15:20:19.932+05:30  WARN 31836 --- [CRUD_Operations] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-20T15:20:20.051+05:30 DEBUG 31836 --- [CRUD_Operations] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
+2024-08-20T15:20:20.207+05:30 DEBUG 31836 --- [CRUD_Operations] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-08-20T15:20:20.257+05:30 DEBUG 31836 --- [CRUD_Operations] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-08-20T15:20:20.295+05:30 DEBUG 31836 --- [CRUD_Operations] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-08-20T15:20:20.452+05:30  INFO 31836 --- [CRUD_Operations] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-08-20T15:20:20.508+05:30  INFO 31836 --- [CRUD_Operations] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-20T15:20:20.522+05:30  INFO 31836 --- [CRUD_Operations] [restartedMain] c.e.C.CrudOperationsApplication          : Started CrudOperationsApplication in 5.233 seconds (process running for 5.91)
+2024-08-20T15:20:43.190+05:30  INFO 31836 --- [CRUD_Operations] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-20T15:20:43.191+05:30  INFO 31836 --- [CRUD_Operations] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-20T15:20:43.192+05:30 DEBUG 31836 --- [CRUD_Operations] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-08-20T15:20:43.193+05:30 DEBUG 31836 --- [CRUD_Operations] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-08-20T15:20:43.193+05:30 DEBUG 31836 --- [CRUD_Operations] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-08-20T15:20:43.194+05:30 DEBUG 31836 --- [CRUD_Operations] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@487d2a30
+2024-08-20T15:20:43.195+05:30 DEBUG 31836 --- [CRUD_Operations] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@4b26bd78
+2024-08-20T15:20:43.196+05:30 DEBUG 31836 --- [CRUD_Operations] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-08-20T15:20:43.196+05:30  INFO 31836 --- [CRUD_Operations] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2024-08-20T15:20:43.215+05:30 DEBUG 31836 --- [CRUD_Operations] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/users/2", parameters={}
+2024-08-20T15:20:43.230+05:30  WARN 31836 --- [CRUD_Operations] [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2024-08-20T15:20:43.230+05:30 DEBUG 31836 --- [CRUD_Operations] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 405 METHOD_NOT_ALLOWED
+2024-08-20T15:20:43.261+05:30 DEBUG 31836 --- [CRUD_Operations] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2024-08-20T15:20:43.277+05:30 DEBUG 31836 --- [CRUD_Operations] [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-08-20T15:20:43.383+05:30 DEBUG 31836 --- [CRUD_Operations] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-08-20T15:20:43.388+05:30 DEBUG 31836 --- [CRUD_Operations] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Tue Aug 20 15:20:43 IST 2024, status=405, error=Method Not Allowed, trace=org.springframe (truncated)...]
+2024-08-20T15:20:43.499+05:30 DEBUG 31836 --- [CRUD_Operations] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 405
+2024-08-20T15:21:00.415+05:30 DEBUG 31836 --- [CRUD_Operations] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/users/2", parameters={}
+2024-08-20T15:21:00.415+05:30 DEBUG 31836 --- [CRUD_Operations] [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.CRUD_Operations.controller.UserController#findUserByAdd(long)
+2024-08-20T15:21:00.476+05:30 DEBUG 31836 --- [CRUD_Operations] [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-08-20T15:21:00.477+05:30 DEBUG 31836 --- [CRUD_Operations] [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing [User(id=2, name=Unnimaya, email=Unni@gmail.com)]
+2024-08-20T15:21:00.478+05:30 DEBUG 31836 --- [CRUD_Operations] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-08-20T15:21:45.190+05:30  INFO 31836 --- [CRUD_Operations] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-20T15:21:45.193+05:30  INFO 31836 --- [CRUD_Operations] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-20T15:21:45.202+05:30  INFO 31836 --- [CRUD_Operations] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-20T15:37:57.552+05:30  INFO 31600 --- [CRUD_Operations] [restartedMain] c.e.C.CrudOperationsApplication          : Starting CrudOperationsApplication using Java 17.0.12 with PID 31600 (C:\Users\sandra.davis\IdeaProjects\CRUD_Operations\CRUD_Operations\target\classes started by Sandra.Davis in C:\Users\sandra.davis\IdeaProjects\CRUD_Operations)
+2024-08-20T15:37:57.557+05:30  INFO 31600 --- [CRUD_Operations] [restartedMain] c.e.C.CrudOperationsApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-08-20T15:37:57.638+05:30  INFO 31600 --- [CRUD_Operations] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-08-20T15:37:57.638+05:30  INFO 31600 --- [CRUD_Operations] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-08-20T15:37:58.359+05:30  INFO 31600 --- [CRUD_Operations] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-20T15:37:58.427+05:30  INFO 31600 --- [CRUD_Operations] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 58 ms. Found 1 JPA repository interface.
+2024-08-20T15:37:59.224+05:30  INFO 31600 --- [CRUD_Operations] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-20T15:37:59.235+05:30  INFO 31600 --- [CRUD_Operations] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-20T15:37:59.236+05:30  INFO 31600 --- [CRUD_Operations] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-20T15:37:59.305+05:30  INFO 31600 --- [CRUD_Operations] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-20T15:37:59.306+05:30  INFO 31600 --- [CRUD_Operations] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1667 ms
+2024-08-20T15:37:59.532+05:30  INFO 31600 --- [CRUD_Operations] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-20T15:37:59.581+05:30  INFO 31600 --- [CRUD_Operations] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-20T15:37:59.622+05:30  INFO 31600 --- [CRUD_Operations] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-20T15:37:59.858+05:30  INFO 31600 --- [CRUD_Operations] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-20T15:37:59.895+05:30  INFO 31600 --- [CRUD_Operations] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-20T15:38:00.069+05:30  INFO 31600 --- [CRUD_Operations] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@26c58b38
+2024-08-20T15:38:00.070+05:30  INFO 31600 --- [CRUD_Operations] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-20T15:38:00.092+05:30  WARN 31600 --- [CRUD_Operations] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-20T15:38:01.103+05:30  INFO 31600 --- [CRUD_Operations] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-20T15:38:01.135+05:30  INFO 31600 --- [CRUD_Operations] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-20T15:38:01.492+05:30  WARN 31600 --- [CRUD_Operations] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-20T15:38:01.588+05:30 DEBUG 31600 --- [CRUD_Operations] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in 'requestMappingHandlerMapping'
+2024-08-20T15:38:01.690+05:30 DEBUG 31600 --- [CRUD_Operations] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-08-20T15:38:01.754+05:30 DEBUG 31600 --- [CRUD_Operations] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-08-20T15:38:01.797+05:30 DEBUG 31600 --- [CRUD_Operations] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-08-20T15:38:01.929+05:30  INFO 31600 --- [CRUD_Operations] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-08-20T15:38:01.980+05:30  INFO 31600 --- [CRUD_Operations] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-20T15:38:01.990+05:30  INFO 31600 --- [CRUD_Operations] [restartedMain] c.e.C.CrudOperationsApplication          : Started CrudOperationsApplication in 4.823 seconds (process running for 5.288)
+2024-08-20T15:38:42.226+05:30  INFO 31600 --- [CRUD_Operations] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-20T15:38:42.226+05:30  INFO 31600 --- [CRUD_Operations] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-20T15:38:42.227+05:30 DEBUG 31600 --- [CRUD_Operations] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-08-20T15:38:42.227+05:30 DEBUG 31600 --- [CRUD_Operations] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-08-20T15:38:42.228+05:30 DEBUG 31600 --- [CRUD_Operations] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-08-20T15:38:42.229+05:30 DEBUG 31600 --- [CRUD_Operations] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@78cd5a14
+2024-08-20T15:38:42.230+05:30 DEBUG 31600 --- [CRUD_Operations] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@89218f
+2024-08-20T15:38:42.231+05:30 DEBUG 31600 --- [CRUD_Operations] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-08-20T15:38:42.231+05:30  INFO 31600 --- [CRUD_Operations] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2024-08-20T15:38:42.248+05:30 DEBUG 31600 --- [CRUD_Operations] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : PATCH "/users/update", parameters={}
+2024-08-20T15:38:42.273+05:30 DEBUG 31600 --- [CRUD_Operations] [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.CRUD_Operations.controller.UserController#updateEmail(User)
+2024-08-20T15:38:42.450+05:30 DEBUG 31600 --- [CRUD_Operations] [http-nio-8080-exec-1] o.s.web.method.HandlerMethod             : Could not resolve parameter [0] in public com.example.CRUD_Operations.model.User com.example.CRUD_Operations.controller.UserController.updateEmail(com.example.CRUD_Operations.model.User): JSON parse error: Unexpected character ('"' (code 34)): was expecting comma to separate Object entries
+2024-08-20T15:38:42.458+05:30  WARN 31600 --- [CRUD_Operations] [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('"' (code 34)): was expecting comma to separate Object entries]
+2024-08-20T15:38:42.462+05:30 DEBUG 31600 --- [CRUD_Operations] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
+2024-08-20T15:38:42.473+05:30 DEBUG 31600 --- [CRUD_Operations] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for PATCH "/error", parameters={}
+2024-08-20T15:38:42.476+05:30 DEBUG 31600 --- [CRUD_Operations] [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-08-20T15:38:42.511+05:30 DEBUG 31600 --- [CRUD_Operations] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-08-20T15:38:42.514+05:30 DEBUG 31600 --- [CRUD_Operations] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Tue Aug 20 15:38:42 IST 2024, status=400, error=Bad Request, trace=org.springframework.ht (truncated)...]
+2024-08-20T15:38:42.563+05:30 DEBUG 31600 --- [CRUD_Operations] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 400
+2024-08-20T15:38:50.949+05:30 DEBUG 31600 --- [CRUD_Operations] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : PATCH "/users/update", parameters={}
+2024-08-20T15:38:50.950+05:30 DEBUG 31600 --- [CRUD_Operations] [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.CRUD_Operations.controller.UserController#updateEmail(User)
+2024-08-20T15:38:50.952+05:30 DEBUG 31600 --- [CRUD_Operations] [http-nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [User(id=2, name=null, email=Unnimaya@gmail.com)]
+2024-08-20T15:38:51.127+05:30 DEBUG 31600 --- [CRUD_Operations] [http-nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-08-20T15:38:51.128+05:30 DEBUG 31600 --- [CRUD_Operations] [http-nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing [User(id=2, name=Unnimaya, email=Unnimaya@gmail.com)]
+2024-08-20T15:38:51.132+05:30 DEBUG 31600 --- [CRUD_Operations] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-08-20T15:49:09.807+05:30  INFO 31600 --- [CRUD_Operations] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-20T15:49:09.810+05:30  INFO 31600 --- [CRUD_Operations] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-20T15:49:09.817+05:30  INFO 31600 --- [CRUD_Operations] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-20T15:49:15.740+05:30  INFO 32480 --- [CRUD_Operations] [restartedMain] c.e.C.CrudOperationsApplication          : Starting CrudOperationsApplication using Java 17.0.12 with PID 32480 (C:\Users\sandra.davis\IdeaProjects\CRUD_Operations\CRUD_Operations\target\classes started by Sandra.Davis in C:\Users\sandra.davis\IdeaProjects\CRUD_Operations)
+2024-08-20T15:49:15.743+05:30  INFO 32480 --- [CRUD_Operations] [restartedMain] c.e.C.CrudOperationsApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-08-20T15:49:15.836+05:30  INFO 32480 --- [CRUD_Operations] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-08-20T15:49:15.837+05:30  INFO 32480 --- [CRUD_Operations] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-08-20T15:49:16.651+05:30  INFO 32480 --- [CRUD_Operations] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-20T15:49:16.742+05:30  INFO 32480 --- [CRUD_Operations] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 78 ms. Found 1 JPA repository interface.
+2024-08-20T15:49:17.531+05:30  INFO 32480 --- [CRUD_Operations] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-20T15:49:17.542+05:30  INFO 32480 --- [CRUD_Operations] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-20T15:49:17.543+05:30  INFO 32480 --- [CRUD_Operations] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-20T15:49:17.596+05:30  INFO 32480 --- [CRUD_Operations] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-20T15:49:17.596+05:30  INFO 32480 --- [CRUD_Operations] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1757 ms
+2024-08-20T15:49:17.766+05:30  INFO 32480 --- [CRUD_Operations] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-20T15:49:17.839+05:30  INFO 32480 --- [CRUD_Operations] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-20T15:49:17.879+05:30  INFO 32480 --- [CRUD_Operations] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-20T15:49:18.105+05:30  INFO 32480 --- [CRUD_Operations] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-20T15:49:18.133+05:30  INFO 32480 --- [CRUD_Operations] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-20T15:49:18.323+05:30  INFO 32480 --- [CRUD_Operations] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@48f41b27
+2024-08-20T15:49:18.325+05:30  INFO 32480 --- [CRUD_Operations] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-20T15:49:18.349+05:30  WARN 32480 --- [CRUD_Operations] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-20T15:49:19.086+05:30  INFO 32480 --- [CRUD_Operations] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-20T15:49:19.129+05:30  INFO 32480 --- [CRUD_Operations] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-20T15:49:19.593+05:30  WARN 32480 --- [CRUD_Operations] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-20T15:49:19.721+05:30 DEBUG 32480 --- [CRUD_Operations] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 7 mappings in 'requestMappingHandlerMapping'
+2024-08-20T15:49:19.822+05:30 DEBUG 32480 --- [CRUD_Operations] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-08-20T15:49:19.863+05:30 DEBUG 32480 --- [CRUD_Operations] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-08-20T15:49:19.901+05:30 DEBUG 32480 --- [CRUD_Operations] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-08-20T15:49:20.031+05:30  INFO 32480 --- [CRUD_Operations] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-08-20T15:49:20.076+05:30  INFO 32480 --- [CRUD_Operations] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-20T15:49:20.088+05:30  INFO 32480 --- [CRUD_Operations] [restartedMain] c.e.C.CrudOperationsApplication          : Started CrudOperationsApplication in 4.729 seconds (process running for 5.217)
+2024-08-20T15:49:53.300+05:30  INFO 32480 --- [CRUD_Operations] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-20T15:49:53.300+05:30  INFO 32480 --- [CRUD_Operations] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-20T15:49:53.301+05:30 DEBUG 32480 --- [CRUD_Operations] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-08-20T15:49:53.301+05:30 DEBUG 32480 --- [CRUD_Operations] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-08-20T15:49:53.301+05:30 DEBUG 32480 --- [CRUD_Operations] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-08-20T15:49:53.303+05:30 DEBUG 32480 --- [CRUD_Operations] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@621e757f
+2024-08-20T15:49:53.303+05:30 DEBUG 32480 --- [CRUD_Operations] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@60839191
+2024-08-20T15:49:53.304+05:30 DEBUG 32480 --- [CRUD_Operations] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-08-20T15:49:53.304+05:30  INFO 32480 --- [CRUD_Operations] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-08-20T15:49:53.322+05:30 DEBUG 32480 --- [CRUD_Operations] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : PATCH "/users/3", parameters={}
+2024-08-20T15:49:53.358+05:30  WARN 32480 --- [CRUD_Operations] [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'PATCH' is not supported]
+2024-08-20T15:49:53.360+05:30 DEBUG 32480 --- [CRUD_Operations] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 405 METHOD_NOT_ALLOWED
+2024-08-20T15:49:53.376+05:30 DEBUG 32480 --- [CRUD_Operations] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for PATCH "/error", parameters={}
+2024-08-20T15:49:53.414+05:30 DEBUG 32480 --- [CRUD_Operations] [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-08-20T15:49:53.504+05:30 DEBUG 32480 --- [CRUD_Operations] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-08-20T15:49:53.524+05:30 DEBUG 32480 --- [CRUD_Operations] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Tue Aug 20 15:49:53 IST 2024, status=405, error=Method Not Allowed, trace=org.springframe (truncated)...]
+2024-08-20T15:49:53.637+05:30 DEBUG 32480 --- [CRUD_Operations] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 405
+2024-08-20T15:49:59.395+05:30 DEBUG 32480 --- [CRUD_Operations] [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : DELETE "/users/3", parameters={}
+2024-08-20T15:49:59.396+05:30 DEBUG 32480 --- [CRUD_Operations] [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.CRUD_Operations.controller.UserController#deleteUser(long)
+2024-08-20T15:49:59.698+05:30 DEBUG 32480 --- [CRUD_Operations] [http-nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2024-08-20T15:49:59.699+05:30 DEBUG 32480 --- [CRUD_Operations] [http-nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Deleted!"]
+2024-08-20T15:49:59.702+05:30 DEBUG 32480 --- [CRUD_Operations] [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-08-20T15:51:08.498+05:30  INFO 32480 --- [CRUD_Operations] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-20T15:51:08.501+05:30  INFO 32480 --- [CRUD_Operations] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-20T15:51:08.513+05:30  INFO 32480 --- [CRUD_Operations] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-20T15:57:45.832+05:30  INFO 31784 --- [CRUD_Operations] [restartedMain] c.e.C.CrudOperationsApplication          : Starting CrudOperationsApplication using Java 17.0.12 with PID 31784 (C:\Users\sandra.davis\IdeaProjects\CRUD_Operations\CRUD_Operations\target\classes started by Sandra.Davis in C:\Users\sandra.davis\IdeaProjects\CRUD_Operations)
+2024-08-20T15:57:45.836+05:30  INFO 31784 --- [CRUD_Operations] [restartedMain] c.e.C.CrudOperationsApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-08-20T15:57:45.902+05:30  INFO 31784 --- [CRUD_Operations] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-08-20T15:57:45.903+05:30  INFO 31784 --- [CRUD_Operations] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-08-20T15:57:46.935+05:30  INFO 31784 --- [CRUD_Operations] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-20T15:57:47.009+05:30  INFO 31784 --- [CRUD_Operations] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 64 ms. Found 1 JPA repository interface.
+2024-08-20T15:57:47.804+05:30  INFO 31784 --- [CRUD_Operations] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-08-20T15:57:47.816+05:30  INFO 31784 --- [CRUD_Operations] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-20T15:57:47.816+05:30  INFO 31784 --- [CRUD_Operations] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-20T15:57:47.866+05:30  INFO 31784 --- [CRUD_Operations] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-20T15:57:47.866+05:30  INFO 31784 --- [CRUD_Operations] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1962 ms
+2024-08-20T15:57:48.091+05:30  INFO 31784 --- [CRUD_Operations] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-20T15:57:48.177+05:30  INFO 31784 --- [CRUD_Operations] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-20T15:57:48.239+05:30  INFO 31784 --- [CRUD_Operations] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-20T15:57:48.510+05:30  INFO 31784 --- [CRUD_Operations] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-20T15:57:48.543+05:30  INFO 31784 --- [CRUD_Operations] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-20T15:57:48.750+05:30  INFO 31784 --- [CRUD_Operations] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@542bda9f
+2024-08-20T15:57:48.752+05:30  INFO 31784 --- [CRUD_Operations] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-20T15:57:48.773+05:30  WARN 31784 --- [CRUD_Operations] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-20T15:57:49.681+05:30  INFO 31784 --- [CRUD_Operations] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-20T15:57:49.728+05:30  INFO 31784 --- [CRUD_Operations] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-20T15:57:50.147+05:30  WARN 31784 --- [CRUD_Operations] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-20T15:57:50.272+05:30 DEBUG 31784 --- [CRUD_Operations] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 7 mappings in 'requestMappingHandlerMapping'
+2024-08-20T15:57:50.366+05:30 DEBUG 31784 --- [CRUD_Operations] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-08-20T15:57:50.412+05:30 DEBUG 31784 --- [CRUD_Operations] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-08-20T15:57:50.460+05:30 DEBUG 31784 --- [CRUD_Operations] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-08-20T15:57:50.601+05:30  INFO 31784 --- [CRUD_Operations] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-08-20T15:57:50.673+05:30  INFO 31784 --- [CRUD_Operations] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-08-20T15:57:50.689+05:30  INFO 31784 --- [CRUD_Operations] [restartedMain] c.e.C.CrudOperationsApplication          : Started CrudOperationsApplication in 5.433 seconds (process running for 6.166)
+2024-08-20T15:57:59.325+05:30  INFO 31784 --- [CRUD_Operations] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-20T15:57:59.328+05:30  INFO 31784 --- [CRUD_Operations] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-20T15:57:59.329+05:30 DEBUG 31784 --- [CRUD_Operations] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-08-20T15:57:59.329+05:30 DEBUG 31784 --- [CRUD_Operations] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-08-20T15:57:59.329+05:30 DEBUG 31784 --- [CRUD_Operations] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-08-20T15:57:59.331+05:30 DEBUG 31784 --- [CRUD_Operations] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@7df028c
+2024-08-20T15:57:59.331+05:30 DEBUG 31784 --- [CRUD_Operations] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@608362e2
+2024-08-20T15:57:59.332+05:30 DEBUG 31784 --- [CRUD_Operations] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-08-20T15:57:59.332+05:30  INFO 31784 --- [CRUD_Operations] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-08-20T15:57:59.351+05:30 DEBUG 31784 --- [CRUD_Operations] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/all", parameters={}
+2024-08-20T15:57:59.667+05:30 DEBUG 31784 --- [CRUD_Operations] [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.CRUD_Operations.controller.UserController#getAllUsers()
+2024-08-20T15:58:00.592+05:30 DEBUG 31784 --- [CRUD_Operations] [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-08-20T15:58:00.598+05:30 DEBUG 31784 --- [CRUD_Operations] [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [[User(id=1, name=Sandra, email=Sandra@gmail.com), User(id=2, name=Unnimaya, email=Unni@gmail.com)]]
+2024-08-20T15:58:00.689+05:30 DEBUG 31784 --- [CRUD_Operations] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-08-20T15:58:14.074+05:30 DEBUG 31784 --- [CRUD_Operations] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : PATCH "/users/update", parameters={}
+2024-08-20T15:58:14.075+05:30 DEBUG 31784 --- [CRUD_Operations] [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.CRUD_Operations.controller.UserController#updateEmail(User)
+2024-08-20T15:58:14.145+05:30 DEBUG 31784 --- [CRUD_Operations] [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [User(id=2, name=null, email=Unnimaya@gmail.com)]
+2024-08-20T15:58:14.238+05:30 DEBUG 31784 --- [CRUD_Operations] [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-08-20T15:58:14.239+05:30 DEBUG 31784 --- [CRUD_Operations] [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing [User(id=2, name=Unnimaya, email=Unnimaya@gmail.com)]
+2024-08-20T15:58:14.241+05:30 DEBUG 31784 --- [CRUD_Operations] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-08-20T16:00:57.682+05:30  INFO 31784 --- [CRUD_Operations] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-20T16:00:57.686+05:30  INFO 31784 --- [CRUD_Operations] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-20T16:00:57.690+05:30  INFO 31784 --- [CRUD_Operations] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
