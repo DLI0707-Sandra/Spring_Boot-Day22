@@ -50,6 +50,18 @@ public class UserService implements UserServiceInterface{
             System.out.println(e.getMessage());
             return null;
         }
+    }
 
+    @Override
+    public List<User> addUsers(List<User> users) {
+        return userRepository.saveAll(users);
+    }
+
+    @Override
+    public void updateUserEmails(List<User> users) {
+            for(User user:users)
+            {
+                userRepository.updateEmail(user.getId(),user.getEmail());
+            }
     }
 }

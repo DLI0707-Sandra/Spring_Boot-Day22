@@ -46,5 +46,17 @@ public class UserController {
             return "Could not delete!";
     }
 
+    @PostMapping("/addmultiple")
+    public List<User> addMultiple(@RequestBody List<User>users)
+    {
+        return userService.addUsers(users);
+    }
+
+    @PatchMapping("/update/emails")
+    public void updateMultiple(@RequestBody List<User>users)
+    {
+        userService.updateUserEmails(users);
+    }
+
 
 }

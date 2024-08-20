@@ -10,4 +10,6 @@ public interface UserServiceInterface {
     User findById(long id);
     User updateUserEmail(long id,String email);
     String deleteUser(long id);
+    List<User> addUsers(List<User>users);
+    void updateUserEmails(List<User>users);
 }
