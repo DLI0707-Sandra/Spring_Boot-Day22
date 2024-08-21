@@ -7,9 +7,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.yaml.snakeyaml.constructor.DuplicateKeyException;
 
 import java.util.List;
 
+@RestControllerAdvice
 @RestController
 public class UserController {
 
@@ -17,8 +19,7 @@ public class UserController {
     UserService userService;
 
     @GetMapping("/all")
-    public List<User> getAllUsers()
-    {
+    public List<User> getAllUsers() {
         return userService.findAllUsers();
     }
 
@@ -28,41 +29,35 @@ public class UserController {
     }
 
     @GetMapping("/users/{id}")
-    public User findUserByAdd(@PathVariable("id") long id)
-    {
+    public User findUserByAdd(@PathVariable("id") long id) {
         return userService.findById(id);
     }
 
     @PatchMapping("/users/update")
-    public User updateEmail(@RequestBody User user)
-    {
-        return userService.updateUserEmail(user.getId(),user.getEmail());
+    public User updateEmail(@RequestBody User user) {
+        return userService.updateUserEmail(user.getId(), user.getEmail());
     }
 
     @DeleteMapping("/users/{id}")
-    public String deleteUser(@PathVariable("id") long id)
-    {
-        if(userService.deleteUser(id)!=null)
+    public String deleteUser(@PathVariable("id") long id) {
+        if (userService.deleteUser(id) != null)
             return "Deleted!";
         else
             return "Could not delete!";
     }
 
     @PostMapping("/addmultiple")
-    public List<User> addMultiple(@RequestBody List<User>users)
-    {
+    public List<User> addMultiple(@RequestBody List<User> users) {
         return userService.addUsers(users);
     }
 
     @PatchMapping("/update/emails")
-    public void updateMultiple(@RequestBody List<User>users)
-    {
+    public void updateMultiple(@RequestBody List<User> users) {
         userService.updateUserEmails(users);
     }
 
     @GetMapping("/domain")
-    public List<User> getUsers(@RequestBody String domain)
-    {
+    public List<User> getUsers(@RequestBody String domain) {
         return userService.getUsersByEmailDomain(domain);
     }
 
@@ -74,26 +69,33 @@ public class UserController {
 //    }
 
     @GetMapping("/count")
-    public int countUsers()
-    {
+    public int countUsers() {
         return userService.getUserCount();
     }
 
     @PostMapping("/unique")
-    public ResponseEntity<String> insertUnique(@RequestBody User user)
-    {
-        ResponseEntity<String> response = null;
-        try {
-            userService.addUserWithExceptionHandling(user);
-            response= new ResponseEntity<String>(
-                    "User '"+user.getId()+"' created", HttpStatus.CREATED);
-        }catch (Exception e)
-        {
-            response = new ResponseEntity<String>(
-                    "User with same id already exists",
-                    HttpStatus.INTERNAL_SERVER_ERROR);
-        }
-        return response;
+    public void insertUnique(@RequestBody User user) {
+        userService.addUserWithExceptionHandling(user);
+    }
+//    public ResponseEntity<String> insertUnique(@RequestBody User user)
+//    {
+//        ResponseEntity<String> response = null;
+//        try {
+//            userService.addUserWithExceptionHandling(user);
+//            response= new ResponseEntity<String>(
+//                    "User '"+user.getId()+"' created", HttpStatus.CREATED);
+//        }catch (Exception e)
+//        {
+//            response = new ResponseEntity<String>(
+//                    "User with same id already exists",
+//                    HttpStatus.INTERNAL_SERVER_ERROR);
+//        }
+//        return response;
+//}
+
+    @ExceptionHandler(org.springframework.dao.DuplicateKeyException.class)
+    public ResponseEntity<String> handleException(org.springframework.dao.DuplicateKeyException ex) {
+        return new ResponseEntity<>("User with same id already exists", HttpStatus.BAD_REQUEST);
     }
 
 }
